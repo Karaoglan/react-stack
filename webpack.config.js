@@ -8,9 +8,10 @@ module.exports = {
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server'
   ],
+  devServer: { inline: true },
   output: {
-    filename: './public/[name].js',
-    path: path.join(__dirname, 'public'),
+    filename: '[name].js',
+    path: path.join(__dirname, '/public'),
     publicPath: '/public/'
   },
   plugins: [
