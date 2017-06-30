@@ -24,6 +24,11 @@ module.exports = {
         test: /\.jsx?$/,
         include: path.join(__dirname, 'src'),
         loaders: ['react-hot-loader/webpack', 'babel-loader']
+      },
+      {
+        test: /\.scss$/,
+        include: path.join(__dirname, 'src'),
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
 
